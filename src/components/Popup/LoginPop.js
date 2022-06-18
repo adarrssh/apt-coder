@@ -23,7 +23,7 @@ function LoginPopup({ setShowLoginModal }) {
     const {email, password } = user
     if (email && password) {
     setShowLoginModal(false);
-      axios.post("http://localhost:8000/Login", user)
+      axios.post("https://meerrnn.herokuapp.com/", user)
         .then(res => { console.log(res.data.message);})
         .catct(err => {
           console.log(err);

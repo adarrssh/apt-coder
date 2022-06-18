@@ -23,7 +23,7 @@ function Popup({ setShowModal }) {
   const submit = () => {
     const { name, email, password } = user
     if (name && email && password) {
-      axios.post("http://localhost:8000/Register", user)
+      axios.post("https://meerrnn.herokuapp.com/", user)
         .then(res => { console.log(res) })
         .catct(err => {
           console.log(err);
