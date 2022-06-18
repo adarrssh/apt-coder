@@ -6,7 +6,7 @@ import LoginPopup from '../Popup/LoginPop'
 
 function Navbar() {
   
-  const [showModal, setShowModal]=useState(false)
+  const [showModal, setShowModal]=useState(true)
   const [showLoginModal, setShowLoginModal]=useState(false)
 
   const openModal=()=>{
